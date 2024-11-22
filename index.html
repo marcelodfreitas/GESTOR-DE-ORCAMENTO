@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestor de Orçamento</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Gestor de Orçamento</h2>
+
+    <div class="container">
+      <h4>Balanço</h4>
+      <h1 id="balanco">R$0.00</h1>
+
+      <div class="container-ganhos-despesas">
+        <div>
+          <h4>Ganhos</h4>
+          <p id="dinheiro-mais" class="dinheiro mais">R$0.00</p>
+        </div>
+
+        <div>
+          <h4>Despesas</h4>
+          <p id="dinheiro-menos" class="dinheiro menos">R$0.00</p>
+        </div>
+      </div>
+
+      <h3>Histórico</h3>
+      <ul id="lista" class="lista">
+        <li class="menos">
+          Dinheiro <span>R$400.00</span>
+          <button class="botao-apagar">x</button>
+        </li>
+      </ul>
+
+      <h3>Adicionar nova transação</h3>
+
+      <form id="formulario">
+        <div class="form-control">
+          <label for="text">Texto</label>
+          <input type="text" id="texto" placeholder="Escreva o texto..." />
+        </div>
+
+        <div class="form-control">
+          <label for="quantidade"
+            >Quantidade (negativo - gasto, positivo - ganho)</label
+          >
+          <input
+            type="text"
+            id="quantidade"
+            placeholder="Insira a quantidade..."
+          />
+        </div>
+
+        <button class="botao">Adicionar Transação</button>
+      </form>
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
